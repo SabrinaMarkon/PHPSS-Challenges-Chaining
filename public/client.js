@@ -15,7 +15,7 @@ $(function() {
 
 });
 
-//robit.wakeUp().findTrash().pickupTrash().changeBabyDiapers().makeDinner().shutDown();
+//robot.wakeUp().findTrash().pickupTrash().changeBabyDiapers().makeDinner().shutDown();
 
 function chainCommands(commands) {
   
@@ -54,7 +54,7 @@ function shutDown() {
   console.log('Shut down for the day');
 }
 
-var robit = {};
+var robot = {};
 
 var commands = [];
 

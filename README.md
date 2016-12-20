@@ -3,13 +3,19 @@ SELF CHALLENGE - December 19, 2016 - Chaining:
 
 You are given an API that commands a robot.
 The API does not currently allow functions to be chainable (think jQuery, D3)
+
 You are to write some code that allows those functions to be chainable.
+
 You cannot edit the prototype functions at all.
-You must write all of your code within the space indicated (starting on line 74)
+
 Each of the robot's functions takes a callback function and executes an asynchronous operation
+
 Each function calls console.log at the end of its execution
+
 Your solution must be flexible enough to work with any order or number of commands
+
 Functions must execute in the order they are called, and each function is called after the previous has finished.
+
 For example:
 
 robit.wakeUp().findTrash().pickupTrash().changeBabyDiapers().makeDinner().shutDown();
