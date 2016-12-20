@@ -17,16 +17,26 @@ $(function() {
 
 //robot.wakeUp().findTrash().pickupTrash().changeBabyDiapers().makeDinner().shutDown();
 
+function addCommand(command) {
+  //alert(command);
+  var div = document.getElementById('showchain');
+  if (div.innerHTML !== '') {
+    div.innerHTML = div.innerHTML + '.';
+  }
+  div.innerHTML = div.innerHTML + command + '()';
+}
+
 function chainCommands(commands) {
   
-  for ( i = 0; i < commands.length; i++ ) {
-    //console.log(commands[i]);
+  alert(commands);
+  // for ( i = 0; i < commands.length; i++ ) {
+  //   //console.log(commands[i]);
     
-    // get the function name for the command:
-    var commandname = commands[i];
-    // execute it:
-    commandname();
-  }
+  //   // get the function name for the command:
+  //   var commandname = commands[i];
+  //   // execute it:
+  //   commandname();
+  // }
   
 }
 

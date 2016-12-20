@@ -21,11 +21,22 @@
   <body>
 
  
- Enter chained commands in the order you would like the robot to perform thm:<br><br>
- ie: robot.wakeUp().findTrash().pickupTrash().changeBabyDiapers().makeDinner().shutDown();<br><br>
- 
+ Enter chained commands in the order you would like the robot to chain them:<br><br>
+
   <form>
-    <input type="text" size="100" value="robot"><input type="submit" value="Send Commands">
+    <select id="addcommand">
+      <option>wakeUp</option>
+      <option>findTrash</option>
+      <option>pickupTrash</option>
+      <option>changeBabyDiapers</option>
+      <option>makeDinner</option>
+      <option>shutDown</option>
+    </select>
+    <button onclick="addCommand(getElementById('addcommand').value); return false;">Add Command</button>
+    <br><br>
+    Queued Commands:<br><br>
+    <div id="showchain"></div><br>
+    <button onclick="chainCommands(getElementById('showchain').innerHTML); return false;">Run all Commands</button>
   </form>
 
 
