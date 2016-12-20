@@ -22,15 +22,21 @@ robit.wakeUp().findTrash().pickupTrash().changeBabyDiapers().makeDinner().shutDo
 Must result in
 
 "Woke up"
+
 "Found trash"
+
 "Picked up trash"
+
 "Changed baby's diapers"
+
 "Made dinner"
+
 "Shut down for the day"
+
 
 
 notes/observations: Although presented originally as a problem to test JavaScript skill, to me it felt more like a test of my programming logic that could just as easily been in PHP, Java, etc. (a lot of problems are like this though and often have multiple solutions)
 
 URL: https://reflective-reason.gomix.me
 
-Github: 
+Github: https://github.com/SabrinaMarkon/PHPSS-Challenges-Chaining
