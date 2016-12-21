@@ -18,7 +18,7 @@ Functions must execute in the order they are called, and each function is called
 
 For example:
 
-robit.wakeUp().findTrash().pickupTrash().changeBabyDiapers().makeDinner().shutDown();
+robot.wakeUp().findTrash().pickupTrash().changeBabyDiapers().makeDinner().shutDown();
 Must result in
 
 "Woke up"
