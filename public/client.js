@@ -34,20 +34,19 @@ function addCommand(command) {
 
 function chainCommands(commands) {
   
-  //alert(commands);
-  for ( i = 0; i < commands.length; i++ ) {
-    console.log(commands[i]);
-    
+    for ( i = 0; i < commands.length; i++ ) {
+    //console.log(commands[i]);
     // get the function name for the command:
-    // var commandname = commands[i];
+    var commandname = commands[i];
     // // execute it:
-    // commandname();
+    window[commandname]();
+
   }
-  
 }
 
 function wakeUp() {
   console.log('Woke up');
+
 }
 
 function findTrash() {
