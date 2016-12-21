@@ -15,6 +15,11 @@ $(function() {
 
 });
 
+var robot = {};
+
+var commands = [];
+
+
 //robot.wakeUp().findTrash().pickupTrash().changeBabyDiapers().makeDinner().shutDown();
 
 function addCommand(command) {
@@ -24,19 +29,20 @@ function addCommand(command) {
     div.innerHTML = div.innerHTML + '.';
   }
   div.innerHTML = div.innerHTML + command + '()';
+  commands.push(command);
 }
 
 function chainCommands(commands) {
   
-  alert(commands);
-  // for ( i = 0; i < commands.length; i++ ) {
-  //   //console.log(commands[i]);
+  //alert(commands);
+  for ( i = 0; i < commands.length; i++ ) {
+    console.log(commands[i]);
     
-  //   // get the function name for the command:
-  //   var commandname = commands[i];
-  //   // execute it:
-  //   commandname();
-  // }
+    // get the function name for the command:
+    // var commandname = commands[i];
+    // // execute it:
+    // commandname();
+  }
   
 }
 
@@ -64,7 +70,4 @@ function shutDown() {
   console.log('Shut down for the day');
 }
 
-var robot = {};
-
-var commands = [];
 
