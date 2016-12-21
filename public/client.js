@@ -15,12 +15,7 @@ $(function() {
 
 });
 
-var robot = {};
-
 var commands = [];
-
-
-//robot.wakeUp().findTrash().pickupTrash().changeBabyDiapers().makeDinner().shutDown();
 
 function addCommand(command) {
   //alert(command);
